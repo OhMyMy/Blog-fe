@@ -1,0 +1,7 @@
+1响应式 中样式的设置多为添加类名的方式 即逐个添加
+2 响应式中注意样式的级别（父元素的层级）如
+	.navbar-default .navbar-brand 与 .navbar-brand
+	或 color: white !important;（注意媒体查询）
+3 字体中rem 如何使用
+4 为样式的设置添加class???
+5 网页的篇数越多 样式共用更难 如何便捷修改

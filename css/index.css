@@ -1,0 +1,269 @@
+body{
+	padding-top: 50px;
+	color: #8c8c8c;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+    display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+h3{
+	color: #cc9900;
+	font-size: 28px;
+	font-weight: 500;
+
+}
+p{
+	line-height: 36px;
+}
+a,button{ 
+	transition: all .3s ease;
+ }
+ a.btn,
+ button[type=submit]{
+ 	font-size: 18px;
+ 	color: #fff;
+ 	background-color: #cc9900;
+ 	border:none;
+ 	padding:8px 16px;
+ }
+ a.btn:hover,
+ button[type=submit]:hover{
+  	color: #F1B70D;
+  	background-color: #fff;
+  	box-shadow: 0 0 10px #c3c3c3;
+  }
+
+.form-control:focus{
+	border-color: #cc9900;
+	box-shadow: none;
+  }
+ a:hover{
+ 	text-decoration: none;
+ 	outline: none;
+ }
+.tm-gray-bg{
+	background-color: #ccc;
+	color: #000;
+	padding:20px 15px;
+}
+.content,
+.introduction,
+footer{
+	padding: 20px 0 20px;
+}
+/* 下划线 */
+.tm-margin-b-30{
+	display: block;
+	border-top:1px solid #c6c6c6;
+	margin:30px 0;
+}
+/*  次页图片 */
+.tm-about-img-container,
+.tm-blog-img-container,
+.tm-contact-img-container{
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.tm-about-img-container { background-image: url('../img/tm-about-img.jpg');	}
+.tm-blog-img-container { background-image: url('../img/tm-blog-img.jpg'); }
+.tm-contact-img-container { background-image: url('../img/tm-contact-img.jpg'); }
+
+/* 缩列图 */
+.thumbnail{
+	padding: 0;
+	border:none;
+	margin-top:18px;
+}
+.thumbnail .caption h3{
+}
+.thumbnail .caption p{
+	color: #8c8c8c;
+	line-height: 28px;
+}
+
+/* nav中的a标签 */
+ul.aboutLink{
+	padding-left: 8px;
+}
+ul.aboutLink li{
+	list-style-type: none;
+}
+ul.aboutLink li + li {
+	margin-top: 12px;
+}
+ul.aboutLink a{
+	text-decoration: underline;
+}
+ul.aboutLink a:hover{
+	text-decoration: none;
+	color: #cc9900;
+}
+
+/* 媒体对象 */
+.media{
+	margin:15px 0 30px;
+}
+.media-heading{
+	color: #cc9900;
+	margin-bottom: 8px;
+}
+
+.media-object{
+	margin-right: 8px;
+}
+
+.media p{
+	line-height: 28px
+}
+.media-body{
+	border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+/* 导航 */
+.navbar-nav .nav-link {
+	color: black;	
+}
+.navbar-nav .nav-item{
+	margin-left: 10px;
+}
+.navbar-default .navbar-brand {
+    color: #cc9900;
+    display: block;
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+/* 叠高选择器的级别 或 @import
+.navbar-default .navbar-nav .nav-item.active .nav-link, 
+import注意媒体查询*/
+
+.nav-item.active .nav-link,
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus{
+	color: white !important;
+    background-color: #cc9900 !important;
+}
+.navbar-default .navbar-toggle{
+	border-color: #cc9900;
+}
+.navbar-default .navbar-toggle:hover{
+	border-color: #fff;
+	background-color: #cc9900;
+}
+.navbar-default .navbar-toggle:hover > .icon-bar {
+	background-color: #fff;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cc9900;
+}
+/* 轮播 */
+.banner img{
+	height: 500px;
+	width: 100%;
+}
+/* introduction */
+.introduction{
+	
+
+}
+.intro-header{
+	text-align: center;
+	
+}
+.intro-header h3{
+	font-size: 36px;
+}
+.intro-header p{
+	font-size: 18px;
+}
+/* footer */
+footer{
+	background-image: url("../img/classic-pattern-bg.png");
+	
+	color: #c6c6c6;
+}
+footer h3{
+	margin-bottom: 24px;
+}
+footer ul.aboutLink a{
+	color: #cccc66;
+}
+footer ul.aboutLink a:hover{
+	text-decoration: none;
+	color: #cccc66;
+}
+
+footer .ornare p{
+	font-size: 16px
+}
+footer a.btn{
+	color: #fff;
+	background-color: #666;
+}
+footer a.btn:hover{
+	background-color: #515050;
+	color: #fff;
+	box-shadow: none;
+}
+
+@media (min-width: 992px){
+	.hidden-lg-up{
+		display: none !important;		
+	}
+
+}
+
+/* div改变序列 flex + order */
+@media (max-width: 991px){
+	.content h3{
+		text-align: center;
+		margin-top:20px;
+	}
+	.content hr{
+		display: none;
+	}
+	button[type=submit],
+	a.btn{
+		display: block;
+		max-width: 160px;
+		margin:0 auto;
+	}
+	.content .aboutLink li{
+		text-align: center;
+	}
+	.thumbnail .caption{
+		text-align: center;
+	}
+	/* div排序 */
+	.rowReverse{
+	   display: flex;
+	   flex-direction:column;
+	} 
+	.row-order-1{
+		order:1;
+	}
+	.row-order-2{
+		order:2;
+	}
+}
+
+@media (max-width: 510px){
+	.media{
+		max-width: 240px;
+		margin:0 auto;
+	}
+	.media-left{
+		display: block;
+		margin-bottom: 16px;
+	}
+	.media-body{
+		text-align:center;
+}
